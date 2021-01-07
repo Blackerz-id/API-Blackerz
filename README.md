@@ -13,19 +13,29 @@ Blackerz API written in Python
 
 **/api/v1/bots/all**
 Return semua bot dalam database
+
 <br>
+
 **/api/v1/bots/<int:id>**
+
 Return informasi spesifik bot dalam database
+
 <br>
+
 **/api/v1/bots/submit/ int:id>**
-Post bot dengan informasi bot\n
+
+Post bot dengan informasi bot
+
+<br>
+
 ```js
 Headers:{
      'Content-Type': 'application/json',
      'apiKey': String  // Contact developer untuk mendapatkan API key
 }
 ```
-````js
+
+```js
 BODY: {
     name: String,                                        // Nama bot
     owner: { 'id': Number | String, 'name': String },    // Id dan nama akun Discord untuk developer bot
@@ -33,6 +43,7 @@ BODY: {
     id: Number | String                                  // Bot id / client id
 }
 ```
+
 <br>
 
 © Copyright 2021 Fastering18/Blackerz-API
