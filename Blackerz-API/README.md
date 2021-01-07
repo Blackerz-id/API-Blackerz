@@ -1,2 +1,0 @@
-# Blackerz-API
-API
