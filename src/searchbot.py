@@ -16,6 +16,7 @@ class data():
 
 timeStamp = 0
 botlistGlobal = {}
+error1 = {'error': "Bot not found", 'status': "Not success"}
         
 class resouce(Resource):
   def get(self, id):
@@ -24,6 +25,6 @@ class resouce(Resource):
     print(botlist)
     
     if str(id) in botlist:
-        return make_response(jsonify(botlist[str(id)]), 200)
+        return make_response(jsonify(botlist[str(id)]), 200)  # Ketika bot id terdapat di database, return data bot
     else: 
-        return make_response("404 Bot tidak ditemukan.", 404)
+        return make_response(jsonify(error1), 404)            # Ketika bot id tidak terdapat di database, return 404 not found
