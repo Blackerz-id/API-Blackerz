@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Introduction into our API
 
-You can use the [editor on GitHub](https://github.com/Blackerz-id/API-Blackerz/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Blackerz Discord bot list API is a RESTful API to interact with our database.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To get started, please read our documentation about endpoints.
 
-### Markdown
+### Endpoints
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### GET method endpoints<br>
+https://blackerz-api.herokuapp.com/api/v1/bots/all<br>
+Return list all of bots, limit 10 - 100
 
-```markdown
-Syntax highlighted code block
+https://blackerz-api.herokuapp.com/api/v1/bots/ (Bot id)<br>
+Return specific information of bot id parameter
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+#### POST method endpoints<br>
+https://blackerz-api.herokuapp.com/api/v1/bots/submit/ (bot id)<br>
+Upload/edit bot to our database, NOTE: this endpoint require apiKey to access<br>
+To post bot data, you will need to input these data:<br>
+##### Headers<br>
+```js
+{
+   'Content-Type': 'application/json',
+   'apiKey': String                   // You can get API key by contacting our API developer
+}
+```
+##### Body (JSON)
+```js
+{
+   name: String,                                // bot username
+   owner: { 'id': String, 'name': String },     // owner id and tag
+   tag: String,                                 // Tag (name and discriminator) of bot
+   id: String / Number                          // Id of the bot / client id
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Blackerz-id/API-Blackerz/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with API? Check out our Discord server [server link](https://discord.gg/BjnD867JAT) or [visit github](https://github.com/Blackerz-id/API-Blackerz) and we’ll help you sort it out.
