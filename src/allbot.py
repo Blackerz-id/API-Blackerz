@@ -8,7 +8,7 @@ from firebase import firebase
 class data():
     def __init__(self, dataName):
         firebaseDB = firebase.FirebaseApplication(
-            'https://blackerz-default-rtdb.firebaseio.com/', None)
+            'firebase db link', None)
         result = firebaseDB.get('/Infrastructure/botlist', None)
         self.data = result
         botlistGlobal = result
