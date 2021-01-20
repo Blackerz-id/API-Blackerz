@@ -15,7 +15,7 @@ error1 = {'error': "Invalid body data request, read our documentation for detail
 unauthorizedAcess = {'error': "Unauthorized Acess, please provide Api Key", 'status': "Not success"}
 
 firebaseDB = firebase.FirebaseApplication(
-    'https://blackerz-default-rtdb.firebaseio.com/', None)
+    'firebase db link', None)
 
 
 class postBot():
