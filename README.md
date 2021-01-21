@@ -1,7 +1,8 @@
 # API-Blackerz
-Blackerz API written in Python
-<br>
-**__Endpoints__**
+Blackerz API for Discord, written in Python.
+<br><br>
+
+## Endpoints
 
 ( GET ) -> https://blackerz-api.herokuapp.com/api/v1/bots/all
 
@@ -11,11 +12,7 @@ Blackerz API written in Python
 
 ( POST ) -> https://blackerz-api.herokuapp.com/api/v1/bots/{BOT_ID}/edit 
 
-( POST ) -> https://blackerz-api.herokuapp.com/api/v1/bots/{BOT_ID}/vote 
-
 ( GET ) -> https://blackerz-api.herokuapp.com/api/v1/discord/me
-
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/discord/check
 
 ( GET ) -> https://blackerz-api.herokuapp.com/api/v1/discord/check
 
@@ -84,7 +81,7 @@ BODY: {
     owner: { 'id': Number | String, 'name': String },    // Id dan nama akun Discord untuk developer bot
     tag: String,                                         // Tag nama dan diskriminator 
     id: Number | String,                                 // Bot id / client id
-    avatar?: String                                      // Avatar bot icon id pada cdn.discordapp.com
+    avatar?: String,                                     // Avatar bot icon id pada cdn.discordapp.com
     inviteLink?: String                                  // Kode untuk link untuk add bot, harus sesuai dari Discord Developer Portal
 }
 ```
@@ -117,7 +114,7 @@ BODY: {
 ## Kode error<br>
 **500** Terdapat error dalam server, sering terjadi saat server sedang maintenance, <br>
 **429** Jumlah request melebihi batas, API membatasi jumlah reuquest dari client agar tidak terjadi penyalahgunaan, <br>
-**404** Resource tidak ditemukan dalam api, bot & server yang tidak terdapat dalam database, <br>
+**404** Resource tidak ditemukan dalam api, termasuk bot & server yang tidak terdapat dalam database, <br>
 **403** Operasi dilarang dengan alasan tertentu, dapat diketahui dengan membaca JSON response dari server, <br>
 **401** Tidak terverifikasi, server menolak permintaan dari client karena kredensial yang invalid, <br>
 **400** Body JSON dari client yang invalid, harus memiliki spesifikasi dari struktur data diatas. <br>
@@ -125,8 +122,8 @@ BODY: {
 <br>
 
 ## Info lainnya<br>
-**"{BOT_ID}"** Adalah bot / client id yang dapat didapatkan dengan mengklik kanan icon server.<br>
-**"{SERVER_ID}"** Adalah server / guid id yang dapat didapatkan dengan mengklik kanan icon server.<br>
+**"{BOT_ID}"** Adalah bot / client id yang dapat didapatkan dengan mengklik kanan icon server,<br>
+**"{SERVER_ID}"** Adalah server / guid id yang dapat didapatkan dengan mengklik kanan icon server,<br>
 **"?"** Menandakan bahwa parameter tersebut bersifat opsional, server akan mengganti dengan alternatif atau menghilangkannya.<br><br>
 
 © Copyright 2021 Fastering18/Blackerz-API
