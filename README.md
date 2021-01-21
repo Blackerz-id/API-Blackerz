@@ -25,6 +25,7 @@ Blackerz API written in Python
 
 ( POST ) -> https://blackerz-api.herokuapp.com/api/v1/servers/submit/{SERVER_ID}
 <br>
+<br>
 
 **/api/v1/bots/all**
 Return semua bot dalam database
@@ -106,24 +107,26 @@ BODY: {
     owner: { 'id': Number | String, 'name': String },    // Id dan nama akun Discord untuk developer bot
     memberCount: Number,                                 // Jumlah member terbaru
     id: Number | String,                                 // Server id / Guild id
-    avatar?: String,                                     // Avatar server icon id pada cdn.discordapp.com
-    joinLink: String                                     // Kode untuk link masuk server, tidak memerlukan "https://discord.gg/"
+    joinLink: String,                                    // Kode untuk link masuk server, tidak memerlukan "https://discord.gg/"
+    avatar?: String                                      // Avatar server icon id pada cdn.discordapp.com
 }
 ```
 
 <br>
 
 ## Kode error<br>
+**500** Terdapat error dalam server, sering terjadi saat server sedang maintenance, <br>
+**429** Jumlah request melebihi batas, API membatasi jumlah reuquest dari client agar tidak terjadi penyalahgunaan, <br>
 **404** Resource tidak ditemukan dalam api, bot & server yang tidak terdapat dalam database, <br>
 **403** Operasi dilarang dengan alasan tertentu, dapat diketahui dengan membaca JSON response dari server, <br>
 **401** Tidak terverifikasi, server menolak permintaan dari client karena kredensial yang invalid, <br>
-**400** Body JSON dari client yang invalid, harus memiliki spesifikasi dari struktur data diatas, <br>
+**400** Body JSON dari client yang invalid, harus memiliki spesifikasi dari struktur data diatas. <br>
 
 <br>
 
 ## Info lainnya<br>
-**{BOT_ID}** Adalah bot / client id yang dapat didapatkan dengan mengklik kanan icon server.<br>
-**{SERVER_ID}** Adalah server / guid id yang dapat didapatkan dengan mengklik kanan icon server.<br>
+**"{BOT_ID}"** Adalah bot / client id yang dapat didapatkan dengan mengklik kanan icon server.<br>
+**"{SERVER_ID}"** Adalah server / guid id yang dapat didapatkan dengan mengklik kanan icon server.<br>
 **"?"** Menandakan bahwa parameter tersebut bersifat opsional, server akan mengganti dengan alternatif atau menghilangkannya.<br><br>
 
 © Copyright 2021 Fastering18/Blackerz-API
