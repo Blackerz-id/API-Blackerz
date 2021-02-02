@@ -4,23 +4,23 @@ Blackerz API for Discord, written in Python.
 
 ## Endpoints
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/bots/all
+( GET ) -> https://blackerz.herokuapp.com/api/v1/bots/all
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/bots/{BOT_ID}
+( GET ) -> https://blackerz.herokuapp.com/api/v1/bots/{BOT_ID}
 
-( POST ) -> https://blackerz-api.herokuapp.com/api/v1/bots/submit/{BOT_ID} 
+( POST ) -> https://blackerz.herokuapp.com/api/v1/bots/submit/{BOT_ID} 
 
-( POST ) -> https://blackerz-api.herokuapp.com/api/v1/bots/{BOT_ID}/edit 
+( POST ) -> https://blackerz.herokuapp.com/api/v1/bots/{BOT_ID}/edit 
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/discord/me
+( GET ) -> https://blackerz.herokuapp.com/api/v1/discord/me
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/discord/check
+( GET ) -> https://blackerz.herokuapp.com/api/v1/discord/check
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/servers/all
+( GET ) -> https://blackerz.herokuapp.com/api/v1/servers/all
 
-( GET ) -> https://blackerz-api.herokuapp.com/api/v1/servers/{SERVER_ID}
+( GET ) -> https://blackerz.herokuapp.com/api/v1/servers/{SERVER_ID}
 
-( POST ) -> https://blackerz-api.herokuapp.com/api/v1/servers/submit/{SERVER_ID}
+( POST ) -> https://blackerz.herokuapp.com/api/v1/servers/submit/{SERVER_ID}
 <br>
 <br>
 
