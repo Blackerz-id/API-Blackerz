@@ -27,37 +27,36 @@ Blackerz API for Discord, written in Python.
 **/api/v1/bots/all**
 Return semua bot dalam database
 
-<br>
 
 **/api/v1/bots/{BOT_ID}**
 
 Return informasi spesifik bot dalam database
 
-<br>
 
 **/api/v1/bots/submit/{BOT_ID}**
 
 Post bot dengan informasi bot
 
-<br>
 
 **/api/v1/bots/{BOT_ID}/edit**
 
-Edit data bot spesifik bot (Post / Put)
+Edit data bot spesifik bot (POST | PUT)
 
-<br>
+
+**/api/v1/bots/{BOT_ID}/edit/servercount**
+
+Edit data  server count bot  
+
 
 **/api/v1/servers/all**
 
 Return semua servers dalam database
 
-<br>
 
 **/api/v1/servers/{SERVER_ID}**
 
 Return informasi spesifik server dalam database
 
-<br>
 
 **/api/v1/servers/submit/{SERVER_ID}**
 
