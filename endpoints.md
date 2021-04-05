@@ -22,17 +22,16 @@ Return specific information of server from id parameter
 PUT with body and headers structure below:  
 **BODY**  
 ```json
-{
-  "prefix": STRING,
-  "shortDescription": STRING,
-  "longDescription": STRING,
-  "serverCount": NUMBER
-}```
+{  
+  "prefix": STRING,  
+  "shortDescription": STRING,  
+  "longDescription": STRING,  
+  "serverCount": NUMBER  
+}```  
 **prefix**: Prefix of the bot, limited to 5 characters  
 **shortDescription**: Short description to display on the web, limited to 120 characters  
 **longDescription**: Long description to display on the web, limited to 4000 characters  
 **serverCount**: Server count of the bot    
-
 **HEADERS**  
 ```json
 {
@@ -49,7 +48,6 @@ PUT with body and headers structure below:
 }```  
 **shortDescription**: Short description to display on the web, limited to 120 characters  
 **longDescription**: Long description to display on the web, limited to 4000 characters    
-
 **HEADERS**  
 ```json
 {
