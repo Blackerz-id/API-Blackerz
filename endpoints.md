@@ -21,7 +21,7 @@ Return specific information of server from id parameter
 - https://blackerz.herokuapp.com/api/v1/bots/{SERVER_ID}/edit  
 PUT with body and headers structure below:  
 **BODY**  
-```json
+```json  
 {  
   "prefix": STRING,  
   "shortDescription": STRING,  
@@ -33,9 +33,9 @@ PUT with body and headers structure below:
 **longDescription**: Long description to display on the web, limited to 4000 characters  
 **serverCount**: Server count of the bot    
 **HEADERS**  
-```json
-{
-   "Authorization": STRING
+```json  
+{  
+   "Authorization": STRING  
 }```  
 **Authorization**: Your authorization key from website, you can get it by visiting your profile  
 
@@ -43,10 +43,10 @@ PUT with body and headers structure below:
 PUT with body and headers structure below:  
 
 **BODY**  
-```json
-{
-   "shortDescription": STRING,
-   "longDescription": STRING
+```json  
+{  
+   "shortDescription": STRING,  
+   "longDescription": STRING  
 }```  
 **shortDescription**: Short description to display on the web, limited to 120 characters  
 **longDescription**: Long description to display on the web, limited to 4000 characters  
