@@ -2,7 +2,7 @@
 
 Blackerz Discord bot list API is a RESTful API to interact with our database.
 
-To get started, please read our documentation about [endpoints](/endpoints).
+To get started, please read our documentation about [endpoints](API-Blackerz/endpoints).
 
 
 ##### Headers<br>
